@@ -52,7 +52,7 @@ def upload():
     if request.method == 'POST':
         # Get the file from post request
         f = request.files['file']
-        file_path = secure_filename(f.filename)
+#         file_path = secure_filename(f.filename)
 
         # Save the file to ./uploads
         basepath = os.path.dirname(__file__)
